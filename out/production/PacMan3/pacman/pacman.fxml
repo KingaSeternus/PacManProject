@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import pacman.UI.*?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="pacman.UI.Controller"
+            prefHeight="800.0" prefWidth="1200.0"
+            style="-fx-background-color: black;">
+
+    <top>
+        <View fx:id="view"/>
+    </top>
+
+    <bottom>
+        <BorderPane prefHeight="35" style="-fx-padding: 10px, 5px, 10px, 5px; -fx-background-color: #24960E">
+            <left><Label fx:id="tipsLabel" style="-fx-font-size: 150%; -fx-text-fill: white" /></left>
+            <center><Label fx:id="infoLabel" style="-fx-font-size: 150%; -fx-text-fill: white" /></center>
+            <right><Label fx:id="score" style="-fx-font-size: 150%; -fx-text-fill: white"/></right>
+        </BorderPane>
+    </bottom>
+</BorderPane>
